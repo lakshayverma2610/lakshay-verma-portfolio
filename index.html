@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lakshay Verma — B.Tech Computer Science & Engineering</title>
+  <meta name="description" content="Official portfolio of Lakshay Verma, 2nd-year B.Tech CSE student at IILM University, Gurugram. Verified SGPA 9.32, Robotics CoE Award Winner, NPTEL Elite (IIT Kharagpur), and Ex-Full Stack Intern.">
+  
+  <!-- Editorial Typography: Outfit (Display & Numbers) + Plus Jakarta Sans (Interface & Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       Site Header / Navigation
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#hero" class="brand-logo" id="nav-brand">
+          <span class="brand-dot"></span>
+          <span>Lakshay Verma</span>
+          <span class="brand-sub">/ B.Tech CSE</span>
+        </a>
+
+        <ul class="nav-links" id="nav-links-menu">
+          <li><a href="#projects" class="nav-link">Work</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#credentials" class="nav-link">Credentials</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary btn-sm" id="open-resume-btn" title="View Printable Resume">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+            <span>Resume</span>
+          </button>
+          
+          <button class="mobile-menu-toggle btn-icon" id="mobile-toggle-btn" aria-label="Toggle navigation menu">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================================
+         Hero Section
+         ========================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="status-pill">
+          <span class="status-indicator"></span>
+          <span id="hero-status-text">B.Tech Computer Science (2nd Year) · IILM University, Gurugram</span>
+        </div>
+
+        <h1 class="hero-title">
+          Lakshay Verma
+        </h1>
+
+        <p class="hero-subtitle">
+          Second-year computer science undergraduate with proven academic performance (Semester 2 SGPA: 9.32) and practical building across full-stack software, hardware telemetry, and AI-accelerated tooling.
+        </p>
+
+        <!-- Minimalist Metric Strip (Zero Emojis, Quiet Monochromatic Style) -->
+        <div class="hero-metrics-bar">
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">9.32</span>
+            <span class="hero-metric-lbl">SGPA (Sem 2)</span>
+          </div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">8.89</span>
+            <span class="hero-metric-lbl">CGPA (42 Credits)</span>
+          </div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">3rd Place</span>
+            <span class="hero-metric-lbl">Robotics CoE Award</span>
+          </div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">IIT KGP</span>
+            <span class="hero-metric-lbl">NPTEL Elite</span>
+          </div>
+          <div class="hero-metric-sep"></div>
+          <div class="hero-metric-item">
+            <span class="hero-metric-val">Ex-Intern</span>
+            <span class="hero-metric-lbl">Ramakirti Foundation</span>
+          </div>
+        </div>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <button class="btn btn-secondary" id="hero-view-marksheet-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+            </svg>
+            <span>Official Credentials</span>
+          </button>
+          <a href="assets/docs/Lakshay_Verma_Resume.pdf" download="Lakshay_Verma_Resume.pdf" class="btn btn-secondary" id="hero-download-resume-btn" title="Download ATS Resume PDF">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Resume (PDF)</span>
+          </a>
+          <button class="btn btn-secondary" id="quick-copy-hero-email" title="Copy email address">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Project Showcase Section
+         ========================================================================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Selected Works</div>
+          <h2 class="section-title">Engineering Projects & Prototypes</h2>
+          <p class="section-desc">Real software architectures, hackathon systems, robotics prototypes, and foundational engineering.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-controls">
+          <div class="filter-tabs" role="tablist">
+            <button class="filter-tab active" data-filter="all">All Works</button>
+            <button class="filter-tab" data-filter="flagship">Flagship AI</button>
+            <button class="filter-tab" data-filter="hackathon">Hackathons</button>
+            <button class="filter-tab" data-filter="internship">Internship & Hardware</button>
+            <button class="filter-tab" data-filter="personal">Personal Tools</button>
+            <button class="filter-tab" data-filter="early">Foundations & DSA</button>
+          </div>
+          <span class="project-count" id="project-count-badge">Showing projects</span>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Experience & Practical Engineering Section
+         ========================================================================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Industry Experience</div>
+          <h2 class="section-title">Internship & Engineering Work</h2>
+          <p class="section-desc">Practical software engineering tenure and university infrastructure contributions.</p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Ramakirti Foundation -->
+          <div class="experience-card">
+            <div class="experience-meta">
+              <span class="project-category-badge">Summer 2026</span>
+              <span class="experience-period">July 2026</span>
+            </div>
+            <h3 class="experience-title">Full-Stack Engineering & Social Impact Intern</h3>
+            <div class="experience-org">Ramakirti Foundation · 80G / 12A Approved Non-Profit</div>
+            <p class="experience-desc">
+              Completed an intensive 1st-year summer internship under the leadership of Director Kamlesh Suman. Developed frontend components, responsive layouts, form validations, and digital presence workflows for the foundation's official web platform.
+            </p>
+            <div class="experience-footer">
+              <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="internship_cert">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                <span>View Internship Certificate</span>
+              </button>
+              <a href="https://www.ramakirtifoundation.co.in" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm" title="External link">
+                <span>Website</span>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- University IoT Lab Infrastructure -->
+          <div class="experience-card">
+            <div class="experience-meta">
+              <span class="project-category-badge">Lab Infrastructure</span>
+              <span class="experience-period">Spring 2026</span>
+            </div>
+            <h3 class="experience-title">Smart Inventory & Telemetry Engineer</h3>
+            <div class="experience-org">IILM University Physical IoT Lab</div>
+            <p class="experience-desc">
+              Architected a centralized hardware asset tracking and telemetry platform to manage physical microcontrollers (ESP32, Arduino Uno), sensor modules, and bench instruments in the university's actual IoT lab facility.
+            </p>
+            <div class="experience-footer">
+              <button class="btn btn-secondary btn-sm" onclick="openProjectModal('iot-inventory-mgmt')">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+                <span>Inspect Architecture</span>
+              </button>
+              <span style="font-size: 0.75rem; font-weight: 500; color: var(--text-muted);">Lab Systems</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Academic Records & Verified Credentials Section
+         Clean Master List — Zero Duplicate Sections
+         ========================================================================= -->
+    <section class="section" id="credentials">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Verified Records</div>
+          <h2 class="section-title">Academic Record & Credentials</h2>
+          <p class="section-desc">Official university transcripts, national certifications, and industry credentials. All documents are verified and accessible in full resolution.</p>
+        </div>
+
+        <div class="records-container">
+          <!-- Group 1: University Degree & Marksheets -->
+          <div class="record-group">
+            <div class="record-group-title">University Degree & Marksheets</div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">B.Tech Computer Science — Semester 2 Official Transcript</span>
+                  <span class="record-pill">SGPA 9.32</span>
+                </div>
+                <div class="record-meta">IILM University, Gurugram · Academic Year 2025–2026 · 22.0 Credits Earned · Cumulative CGPA: 8.89</div>
+                <p class="record-desc">Earned 5 A+ Grades (Quantum Physics, Applied Calculus, EVS) and Grade A in Data Structures & Algorithms, DSA Lab, and Python.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="sem2">
+                  <span>View Transcript</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">B.Tech Computer Science — Semester 1 Official Transcript</span>
+                  <span class="record-pill">SGPA 8.40</span>
+                </div>
+                <div class="record-meta">IILM University, Gurugram · Academic Year 2025–2026 · 20.0 Credits Earned</div>
+                <p class="record-desc">Grade A+ (10.0) in Applied Linear Algebra; Grade A in Programming in C; Grade A in Digital Electronics & Computer Organization.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="sem1">
+                  <span>View Transcript</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 2: Honors & National Certifications -->
+          <div class="record-group">
+            <div class="record-group-title">Honors & National Certifications</div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">Engineer's Day Innovation Challenge: 3rd Position</span>
+                  <span class="record-pill">Podium Finish</span>
+                </div>
+                <div class="record-meta">Center of Excellence: Robotics & Automation, IILM University & IIC (Ministry of HRD) · 15 Sep 2026</div>
+                <p class="record-desc">Secured 3rd position in the "Best Out of Waste" event for creating a smart automated plant hydration and telemetry station from upcycled computer hard disks. Signed by Dean Dr. Bhawna Mallick and Convener Dr. Puja Acharya.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="engineers_day">
+                  <span>View Certificate</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">NPTEL Elite Certification — Environmental Science</span>
+                  <span class="record-pill">Elite · 4 Credits</span>
+                </div>
+                <div class="record-meta">IIT Kharagpur · Ministry of Education (SWAYAM) · Roll: NPTEL26HS120S955500225</div>
+                <p class="record-desc">12-week national proctored MOOC on environmental systems, evaluated by IIT Kharagpur.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="nptel_env">
+                  <span>View Certificate</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">Full-Stack Engineering & Social Impact Internship</span>
+                  <span class="record-pill">Completed</span>
+                </div>
+                <div class="record-meta">Ramakirti Foundation · Summer 2026 (2 July — 30 July 2026)</div>
+                <p class="record-desc">Engineered interactive web features, responsive layouts, and digital presence workflows for the foundation's official web platform.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="internship_cert">
+                  <span>View Certificate</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">IBM SkillsBuild: Getting Started with Generative AI</span>
+                  <span class="record-pill">IBM Certified</span>
+                </div>
+                <div class="record-meta">IBM SkillsBuild · Plan: PLAN-BAEFCCAAD520 · Completed July 2026</div>
+                <p class="record-desc">Mastered foundation models, generative AI architectures, prompt engineering, and safety patterns.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="ibm_genai">
+                  <span>View Certificate</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">Cyber Security Awareness Certification</span>
+                  <span class="record-pill">DSCI Verified</span>
+                </div>
+                <div class="record-meta">Data Security Council of India & MyGov (MeitY) · Cert ID: 8834963249</div>
+                <p class="record-desc">Digital security standards and cyber hygiene aligned with national cyber defense protocols.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="dsci_cyber">
+                  <span>View Certificate</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Group 3: Prior Foundations -->
+          <div class="record-group">
+            <div class="record-group-title">Prior Academic Foundations</div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">Class 12th Senior Secondary (CBSE)</span>
+                  <span class="record-pill">92.4% Aggregate</span>
+                </div>
+                <div class="record-meta">Gurugram Public School · DigiLocker Certified · Straight A1 Grades</div>
+                <p class="record-desc">98/100 in Informatics Practice (A1) · 93 in English · 93 in Chemistry · 91 in Physics.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="class12">
+                  <span>View Marksheet</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="record-row">
+              <div class="record-main">
+                <div class="record-title-row">
+                  <span class="record-title">Class 10th Secondary School (CBSE)</span>
+                  <span class="record-pill">100/100 in CS</span>
+                </div>
+                <div class="record-meta">Gurugram Public School · DigiLocker Certified</div>
+                <p class="record-desc">Perfect 100/100 marks in Computer Application (Grade A1) · 92.2% Best 5 aggregate.</p>
+              </div>
+              <div class="record-action">
+                <button class="btn btn-secondary btn-sm open-doc-btn" data-doc-id="class10">
+                  <span>View Marksheet</span>
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Verification Banner -->
+        <div class="records-verification-banner">
+          <div style="display: flex; align-items: center; gap: 0.65rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span style="font-size: 0.825rem; color: var(--text-secondary);">
+              <strong>Student Identity Verified:</strong> Registered at IILM University (Student ID: <code>2581008</code>) · Government DigiLocker & APAAR Certified.
+            </span>
+          </div>
+          <span style="font-size: 0.75rem; font-weight: 500; color: var(--text-muted);">Official Stamp & Signature on File</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Skills Matrix Section
+         ========================================================================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Technical Competencies</div>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-desc">Foundations in low-level systems, modern full-stack engineering, and developer tooling.</p>
+        </div>
+
+        <div class="skills-grid" id="skills-container">
+          <!-- Dynamically populated from data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         Contact Section
+         ========================================================================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-label">Connect</div>
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-desc">Whether for internship opportunities, technical collaboration, or engineering discussions—my inbox is open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <div class="contact-direct-box">
+              <div class="contact-direct-label">Direct Email</div>
+              <div class="contact-email-val" id="display-email">lakshayverma2610@gmail.com</div>
+              <button class="btn btn-secondary btn-sm" id="copy-email-btn">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span id="copy-card-text">Copy Email</span>
+              </button>
+            </div>
+
+            <div class="contact-direct-box">
+              <div class="contact-direct-label">Professional Profiles</div>
+              <div class="contact-social-links">
+                <a href="https://www.linkedin.com/in/lakshayverma2610" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="social-linkedin">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="social-github">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Functional Contact Form -->
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="contact-name" class="form-label">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email" class="form-label">Email Address</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="name@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject" class="form-label">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="Internship Opportunity / Inquiry" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message" class="form-label">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit-btn">
+              <span>Send Message</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+            <div class="form-status" id="form-status-alert"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       Site Footer
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <span>© <span id="current-year">2026</span> Lakshay Verma. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       Marksheet & Academic Result Viewer Modal (Images + PDFs)
+       ========================================================================= -->
+  <div class="modal-overlay" id="marksheet-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container doc-modal-container">
+      <div class="modal-header">
+        <div>
+          <span class="project-category-badge" id="doc-badge">Official Record</span>
+          <h3 class="modal-title" id="doc-title" style="margin-top: 0.35rem; font-size: 1.35rem;">Semester 2 Marksheet</h3>
+          <div style="font-size: 0.85rem; color: var(--text-muted);" id="doc-subtitle">IILM University, Gurugram · Official Transcript</div>
+        </div>
+        <button class="modal-close-btn" id="marksheet-close-btn" aria-label="Close marksheet viewer">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Quick Switcher Tabs (Zero Emojis, Clean Neutral Style) -->
+      <div class="doc-tab-buttons" id="doc-tab-buttons">
+        <button class="doc-tab-btn active" data-doc-target="sem2">Sem 2 (SGPA 9.32)</button>
+        <button class="doc-tab-btn" data-doc-target="engineers_day">Engineer's Day Award</button>
+        <button class="doc-tab-btn" data-doc-target="sem1">Sem 1 (SGPA 8.40)</button>
+        <button class="doc-tab-btn" data-doc-target="internship_cert">Internship Certificate</button>
+        <button class="doc-tab-btn" data-doc-target="nptel_env">NPTEL Elite (IIT KGP)</button>
+        <button class="doc-tab-btn" data-doc-target="ibm_genai">IBM Generative AI</button>
+        <button class="doc-tab-btn" data-doc-target="dsci_cyber">DSCI Cybersecurity</button>
+        <button class="doc-tab-btn" data-doc-target="class12">Class 12th (92.4%)</button>
+        <button class="doc-tab-btn" data-doc-target="class10">Class 10th (100/100 CS)</button>
+      </div>
+
+      <!-- Document Image & PDF Viewer Container -->
+      <div class="doc-viewer-wrapper" id="doc-viewer-container">
+        <img src="assets/docs/SEMESTER 2 MARKSHEET.jpg" alt="Official Transcript" class="doc-viewer-img" id="doc-viewer-img">
+        <iframe src="" class="doc-viewer-frame" id="doc-viewer-frame" style="display: none;" title="PDF Document Viewer"></iframe>
+      </div>
+
+      <div class="modal-callout" style="margin-top: 1rem;">
+        <div class="modal-callout-title" id="doc-highlights-title">Verified Highlights</div>
+        <p id="doc-highlights-text" style="font-size: 0.85rem; margin: 0; color: var(--text-secondary);"></p>
+      </div>
+
+      <div class="modal-footer" style="margin-top: 1rem; padding-top: 0.75rem;">
+        <a href="assets/docs/SEMESTER 2 MARKSHEET.jpg" target="_blank" class="btn btn-secondary btn-sm" id="doc-open-raw-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+          <span id="doc-open-link-text">Open Full Resolution File</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Project Detail Modal
+       ========================================================================= -->
+  <div class="modal-overlay" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <span class="project-category-badge" id="modal-category">Category</span>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <h3 class="modal-title" id="modal-title">Project Title</h3>
+      
+      <div class="project-tech-pills" id="modal-tech-list" style="margin-bottom: 1.25rem;">
+        <!-- Pills -->
+      </div>
+
+      <!-- Optional Prototype Media Frame -->
+      <div id="modal-media-container" style="display: none; margin-bottom: 1.25rem;">
+        <img id="modal-image" src="" alt="Project Prototype" style="width: 100%; max-height: 380px; object-fit: contain; border-radius: var(--radius-md); border: 1px solid var(--border-subtle); background-color: var(--bg-subtle);">
+        <div id="modal-image-caption" style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500; margin-top: 0.4rem; text-align: center;"></div>
+      </div>
+
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Overview & Motivation</div>
+          <p id="modal-description">Detailed description</p>
+        </div>
+
+        <div class="modal-section">
+          <div class="modal-section-title">Key Engineering Highlights</div>
+          <ul class="resume-list" id="modal-highlights">
+            <!-- Highlights -->
+          </ul>
+        </div>
+
+        <div class="modal-callout">
+          <div class="modal-callout-title">What I Learned & Key Takeaways</div>
+          <p id="modal-learned" style="font-size: 0.875rem; margin: 0;"></p>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-github-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          <span>View Source Code</span>
+        </a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-live-link">
+          <span>Live Demo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       Resume Viewer Modal (Printable Harvard/MIT Format)
+       ========================================================================= -->
+  <div class="modal-overlay" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-container resume-modal-container">
+      <div class="modal-header">
+        <div style="font-size: 0.75rem; font-weight: 600; letter-spacing: 0.06em; color: var(--text-muted); text-transform: uppercase;">
+          Resume Preview · ATS Compatible
+        </div>
+        <div style="display: flex; gap: 0.5rem; align-items: center;">
+          <a href="assets/docs/Lakshay_Verma_Resume.pdf" download="Lakshay_Verma_Resume.pdf" class="btn btn-primary btn-sm" id="download-resume-pdf-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download PDF</span>
+          </a>
+          <button class="btn btn-secondary btn-sm" id="print-resume-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print</span>
+          </button>
+          <button class="modal-close-btn" id="resume-close-btn" aria-label="Close resume">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Printable Resume Paper -->
+      <div class="resume-paper" id="printable-resume-content">
+        <div class="resume-header">
+          <div class="resume-name" id="res-name">LAKSHAY VERMA</div>
+          <div class="resume-contact-line">
+            <span>IILM University, Gurugram (B.Tech CSE, 2nd Year)</span>
+            <span>•</span>
+            <span id="res-email">lakshayverma2610@gmail.com</span>
+            <span>•</span>
+            <a href="https://www.linkedin.com/in/lakshayverma2610" target="_blank" style="text-decoration: underline;">linkedin.com/in/lakshayverma2610</a>
+            <span>•</span>
+            <span>Gurugram, Haryana</span>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+          <div class="resume-heading">Education</div>
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Bachelor of Technology in Computer Science & Engineering</span>
+              <span>2025 — 2029 (Expected)</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>IILM University, Gurugram (Student ID: 2581008)</span>
+              <span><strong>Sem 2 SGPA: 9.32 | Cumulative CGPA: 8.89 / 10.0 (42 Credits)</strong></span>
+            </div>
+            <ul class="resume-list">
+              <li>Academic Highlights: 5 A+ Grades in Semester 2 (Applied Calculus, Quantum Physics, EVS). Straight Grade A in Data Structures & Algorithms, DSA Lab, C Programming, and Python.</li>
+              <li>Grade A+ (10.0) in Applied Linear Algebra; Grade A in Digital Electronics & Computer Organization.</li>
+            </ul>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Senior Secondary Certificate (Class XII CBSE)</span>
+              <span>2024</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>Gurugram Public School, Gurugram</span>
+              <span><strong>Aggregate: 92.4% (462/500) · Straight A1 Grades</strong></span>
+            </div>
+            <ul class="resume-list">
+              <li>Informatics Practice: 98/100 (A1) · English: 93/100 (A1) · Chemistry: 93/100 (A1) · Physics: 91/100 (A1).</li>
+            </ul>
+          </div>
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Secondary School Examination (Class X CBSE)</span>
+              <span>2023</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>Gurugram Public School, Gurugram</span>
+              <span><strong>100/100 in Computer Application (Grade A1)</strong></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="resume-section">
+          <div class="resume-heading">Experience & Internships</div>
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Full-Stack Engineering & Social Impact Intern</span>
+              <span>July 2026</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>Ramakirti Foundation (80G / 12A Approved Non-Profit)</span>
+              <span>Summer Internship (Post-Freshman Year)</span>
+            </div>
+            <ul class="resume-list">
+              <li>Engineered interactive web features, responsive layouts, and user workflows for the foundation's official web platform.</li>
+              <li>Awarded official Certificate of Completion with commendation for dedication, professionalism, and quality code delivery.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Verified Certifications -->
+        <div class="resume-section">
+          <div class="resume-heading">Verified Industry & Institutional Certifications</div>
+          <div style="font-size: 0.825rem; line-height: 1.6;">
+            <p><strong>3rd Position — Engineer's Day Innovation Challenge:</strong> Center of Excellence in Robotics & Automation and Institution's Innovation Council (Ministry of HRD), IILM University (15 Sep 2026). Automated smart irrigation prototype built with upcycled e-waste.</p>
+            <p><strong>NPTEL Elite Certification (IIT Kharagpur & MoE):</strong> Environmental Science 12-week proctored MOOC, 4 recommended university credits (Roll: NPTEL26HS120S955500225).</p>
+            <p><strong>IBM SkillsBuild: Getting Started with Generative AI:</strong> (Completed July 2026, Credential ID: PLAN-BAEFCCAAD520) Foundation models, LLM architectures, prompt engineering, and ethical AI.</p>
+            <p><strong>Data Security Council of India (DSCI) & MyGov:</strong> Cyber Security Awareness Certification (Cert ID: 8834963249).</p>
+            <p><strong>IBM SkillsBuild: Web Development Track:</strong> (In Progress) Industry-standard frontend foundations, semantic HTML, responsive CSS architecture, JavaScript ES6+, and RESTful API integration.</p>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-section">
+          <div class="resume-heading">Technical Skills & Strengths</div>
+          <div style="font-size: 0.825rem; line-height: 1.6;">
+            <p><strong>Languages & Core:</strong> C (Pointers, Structs, Dynamic Memory), C++, Python, JavaScript (ES6+), SQL, Data Structures, Algorithms.</p>
+            <p><strong>Systems & IoT:</strong> ESP32 Microcontrollers, Arduino C++, MQTT Protocol, Sensor Interfacing, Telemetry Auditing.</p>
+            <p><strong>Modern Building & Tools:</strong> FastAPI, React, Docker, Redis Geospatial, Apache Kafka, Git, Linux CLI.</p>
+          </div>
+        </div>
+
+        <!-- Real Engineering Projects -->
+        <div class="resume-section">
+          <div class="resume-heading">Key Projects & Systems</div>
+          
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>MockMaster — AI Mock Interview & Assessment Platform</span>
+              <span>Flagship University Project</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>AI / LLMs, Prompt Pipelines, Python, FastAPI, React</span>
+              <span>Commissioned by University Leadership</span>
+            </div>
+            <ul class="resume-list">
+              <li>Architected end-to-end automated interview simulation engine for student placement preparation upon university request.</li>
+              <li>Engineered dynamic technical question trees, candidate audio/text response parsing, and rubric scoring algorithms.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Smart Eco-Hydration & E-Waste Soil Telemetry Monitor</span>
+              <span>Award Winner · 3rd Place</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>Arduino Uno, C++, Ultrasonic Sensor, Soil Moisture Probe, Salvaged HDD</span>
+              <span>CoE Robotics & Automation (Engineer's Day 2026)</span>
+            </div>
+            <ul class="resume-list">
+              <li>Secured 3rd Position in University-wide "Best Out Of Waste" innovation challenge under Institution's Innovation Council (MoE).</li>
+              <li>Engineered a sustainable automated irrigation station by upcycling electronic waste (computer HDD) with real-time soil telemetry probes.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Geo-CashWatch — Mule Network & ATM Cash-Out Interception</span>
+              <span>Smart India Hackathon (SIH 26184)</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>FastAPI, Apache Kafka, Redis Geospatial, Docker, Kubernetes, React</span>
+              <span>MHA / I4C Problem Statement</span>
+            </div>
+            <ul class="resume-list">
+              <li>Architected a real-time event pipeline processing synthetic ATM withdrawal events through Kafka message queues.</li>
+              <li>Executed sub-second geospatial proximity clustering in Redis to flag coordinated mule withdrawals across urban ATM clusters.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Smriti Saathi — Cognitive & Memory Companion</span>
+              <span>Smart India Hackathon</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>React Native (Expo), FastAPI, SQLAlchemy, Scikit-Learn</span>
+              <span>Healthcare AI Track</span>
+            </div>
+            <ul class="resume-list">
+              <li>Engineered an empathetic mobile application to support individuals with mild cognitive impairment and their caregivers.</li>
+            </ul>
+          </div>
+
+          <div class="resume-entry">
+            <div class="resume-entry-header">
+              <span>Smart Inventory Management System</span>
+              <span>IILM University IoT Lab</span>
+            </div>
+            <div class="resume-entry-sub">
+              <span>ESP32, Arduino, C++, Hardware Sensors, Web Dashboard</span>
+              <span>Physical Lab Infrastructure</span>
+            </div>
+            <ul class="resume-list">
+              <li>Built hardware and software audit logging system to track physical microcontrollers, sensors, and equipment in the university IoT lab.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Academic Honors -->
+        <div class="resume-section">
+          <div class="resume-heading">Academic Honors & Achievements</div>
+          <ul class="resume-list">
+            <li><strong>Podium Finish (3rd Position) — Engineer's Day:</strong> Awarded by Dean Dr. Bhawna Mallick and Convener Dr. Puja Acharya (Center of Excellence in Robotics & Automation) for smart e-waste robotics innovation (15 Sep 2026).</li>
+            <li><strong>Semester 2 SGPA 9.32 / 10.0:</strong> Ranked in the top tier of IILM University CSE department with 5 A+ grades.</li>
+            <li><strong>NPTEL Elite Scholar:</strong> Awarded Elite ranking by IIT Kharagpur in 12-week national proctored course (4 university credits).</li>
+            <li><strong>DigiLocker & Marksheet Verified:</strong> Official transcripts verified and accessible in online portfolio.</li>
+            <li><strong>Smart India Hackathon (SIH 26184):</strong> Multi-tier distributed solution for Ministry of Home Affairs problem statement.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">lakshayverma2610@gmail.com copied to clipboard!</span>
+  </div>
+
+  <!-- Data and Application Logic -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

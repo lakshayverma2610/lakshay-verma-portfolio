@@ -1,0 +1,9 @@
+# Dependencies and temporary artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.chrome-temp/
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
